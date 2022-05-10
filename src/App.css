@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'League Spartan', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/** Nav styles */
+ul {
+  position: relative;
+  left: 20%;
+  list-style-type: none;
+}
+li {
+  margin: 20px;
+  position: relative;
+  top: -80%;
+  cursor: pointer;
+}
+li:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+svg {
+  position: absolute;
+  left: 65%;
+  top: 52%;
+  cursor: pointer;
+}
+/** Slider1 styles **/
+.home {
+  background-image: url('images/desktop-image-hero-1.jpg');
+  background-size:cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+}
+.aside {
+  margin: auto;
+  margin-left: 3%;
+}
+.aside p{
+  color: hsl(0, 0%, 63%);
+}
+.aside h4 {
+  letter-spacing: 8px;
+  font-size: 1em;
+}
+.aside .arrow {
+  position: absolute;
+  top: 53%;
+  left: 67%;
+  cursor: pointer;
+}
+.aside  .arrow3 {
+  top: 55%;
+}
+
+.slide {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+  width: 100px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 63.5%;
+  left: 50%;
+}
+.slide .first-img{
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.slide .link-left {
+  flex-basis: 50%;
+  height: 100%;
+}
+.slide .link-right {
+  flex-basis: 50%;
+  height: 100%;
+}
+.slide .link-left:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+.slide .sec-img {
+  margin-right: 32px;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.slide .link-right:hover {
+  background-color: hsl(0, 0%, 27%);
 }
 
-.App-link {
-  color: #61dafb;
+/** Slider2 styles **/
+.home2{
+  background-image: url('images/desktop-image-hero-2.jpg');
+  background-size:cover;
+  height: 70vh;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/** Slider3 styles **/
+.home3 {
+  background-image: url('images/desktop-image-hero-3.jpg');
+  background-size:cover;
+  height: 70vh;
+  background-repeat: no-repeat;
+}
+/** Footer Styles **/
+.col-fir {
+  background-image: url('images/image-about-dark.jpg');
+  background-size:cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+
+.col-fir3 {
+  background-image: url('images/image-about-light.jpg');
+  background-size:cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+  padding-top: 2%;
+}
+.col-fir2 {
+  height: 30vh;
+  padding: 1%;
+}
+.col-fir2 h4,p {
+  text-align:left;
+}
+.col-fir2 p{
+  font-size: 0.8em;
+  justify-content: flex-start;
+  color: hsl(0, 0%, 63%);
+}
+.col-fir2 h4 {
+  font-size: 1em;
+  margin: 6% 5% 2% 0;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width : 768px) {
+  .slide {
+    top: 62%;
+    left: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  .aside .arrow {
+    top: 104%;
+    left: 50%;
+  }
+  .aside  .arrow3 {
+    top: 105%;
+    left: 50%;
+  }
+  .home{
+    background-image: url('images/mobile-image-hero-1.jpg');
+  }
+  .home2{
+    background-image: url('images/mobile-image-hero-2.jpg');
+  }
+  .home3{
+    background-image: url('images/mobile-image-hero-3.jpg');
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile {
+    display: block;
+  }
+  .nav-mobile {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: none;
+  }
+  .nav-mobile img {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    cursor: pointer;
+  }
+
+  #close {
+    display: none !important;
+  }
+  #open {
+    display: block !important;
+  }
+
+  .mobile .header {
+    padding-bottom: 20px;
+  }
+  .mobile .header img {
+    width: 17px;
+    height: 15px;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    cursor: pointer;
+    /* position: absolute;
+    top:5%;
+    left: 8%; */
+  }
+  .mobile .header h3 {
+    text-align: center;
+    padding-left: 30px;
+    /* position: absolute;
+    top:5%;
+    left: 8%; */
   }
 }
