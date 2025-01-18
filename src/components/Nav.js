@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css'
 import hamburger from '../images/icon-hamburger.svg'
 import close from '../images/icon-close.svg'
@@ -36,8 +35,8 @@ export default function Nav() {
 
     <div className="mobile">
       <div className="header d-flex ">
-        <img src={hamburger} alt="" className='col-4' onClick={openDropdown}/>
-        <h3 className='text-white col-8'>room</h3>
+        <img src={hamburger} alt="hamburger" className='col-4' onClick={openDropdown}/>
+        <h3 className='text-white col-8 mt-2'>room</h3>
       </div>
       <div className="nav-mobile">
         <img src={close} alt="close" onClick={closedropdown}/>

@@ -49,15 +49,6 @@ svg {
   letter-spacing: 8px;
   font-size: 1em;
 }
-.aside .arrow {
-  position: absolute;
-  top: 53%;
-  left: 67%;
-  cursor: pointer;
-}
-.aside  .arrow3 {
-  top: 55%;
-}
 
 .slide {
   display: flex;
@@ -163,6 +154,7 @@ svg {
   }
   .home{
     background-image: url('images/mobile-image-hero-1.jpg');
+    background-size: cover;
   }
   .home2{
     background-image: url('images/mobile-image-hero-2.jpg');
@@ -185,7 +177,7 @@ svg {
   }
   .nav-mobile img {
     position: absolute;
-    top: 5%;
+    top: 3%;
     left: 7%;
     cursor: pointer;
   }
@@ -207,9 +199,9 @@ svg {
     align-self: center;
     align-items: center;
     cursor: pointer;
-    /* position: absolute;
-    top:5%;
-    left: 8%; */
+    position: absolute;
+    top:2%;
+    left: 3%;
   }
   .mobile .header h3 {
     text-align: center;
